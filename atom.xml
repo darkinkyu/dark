@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://github.com/darkinkyu/ghosteye</id>
+    <id>https://ghosteye.coding.me/ghosteye/</id>
     <title>GhostEye</title>
-    <updated>2019-08-27T09:10:48.868Z</updated>
+    <updated>2019-09-02T09:18:39.185Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://github.com/darkinkyu/ghosteye"/>
-    <link rel="self" href="https://github.com/darkinkyu/ghosteye/atom.xml"/>
+    <link rel="alternate" href="https://ghosteye.coding.me/ghosteye/"/>
+    <link rel="self" href="https://ghosteye.coding.me/ghosteye//atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://github.com/darkinkyu/ghosteye/images/avatar.png</logo>
-    <icon>https://github.com/darkinkyu/ghosteye/favicon.ico</icon>
+    <logo>https://ghosteye.coding.me/ghosteye//images/avatar.png</logo>
+    <icon>https://ghosteye.coding.me/ghosteye//favicon.ico</icon>
     <rights>All rights reserved 2019, GhostEye</rights>
     <entry>
+        <title type="html"><![CDATA[开学第一天]]></title>
+        <id>https://ghosteye.coding.me/ghosteye//post/kai-xue-di-yi-tian</id>
+        <link href="https://ghosteye.coding.me/ghosteye//post/kai-xue-di-yi-tian">
+        </link>
+        <updated>2019-09-02T09:18:05.000Z</updated>
+        <content type="html"><![CDATA[<p>莫名无聊，好无聊啊</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[试试看]]></title>
-        <id>https://github.com/darkinkyu/ghosteye/post/shi-shi-kan</id>
-        <link href="https://github.com/darkinkyu/ghosteye/post/shi-shi-kan">
+        <id>https://ghosteye.coding.me/ghosteye//post/shi-shi-kan</id>
+        <link href="https://ghosteye.coding.me/ghosteye//post/shi-shi-kan">
         </link>
         <updated>2019-08-25T11:03:39.000Z</updated>
         <content type="html"><![CDATA[<p>啦啦啦啦啦啦啦啦啦</p>
