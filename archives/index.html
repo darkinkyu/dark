@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GhostEye</title>
+<meta name="description" content="" />
+<link rel="shortcut icon" href="https://darkinkyu.github.io/dark//favicon.ico?v=1655124956702">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://darkinkyu.github.io/dark//styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://darkinkyu.github.io/dark/">
+  <img class="avatar" src="https://darkinkyu.github.io/dark//images/avatar.png?v=1655124956702" alt="">
+  </a>
+  <h1 class="site-title">
+    GhostEye
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://darkinkyu.github.io/dark/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://darkinkyu.github.io/dark/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="https://darkinkyu.github.io/dark/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://darkinkyu.github.io/dark/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+    
+        
+
+<div class="archives-container">
+  
+    <h2 class="year">2022</h2>
+    
+      
+        <a href="https://darkinkyu.github.io/dark/post/biao-qian-2/" class="post">
+          <h2 class="post-title">
+            标签2
+          </h2>
+          <div class="time">2022-06-13</div>
+        </a>
+      
+    
+      
+        <a href="https://darkinkyu.github.io/dark/post/ce-shi/" class="post">
+          <h2 class="post-title">
+            测试
+          </h2>
+          <div class="time">2022-06-13</div>
+        </a>
+      
+    
+      
+    
+      
+    
+  
+    <h2 class="year">2020</h2>
+    
+      
+    
+      
+    
+      
+        <a href="https://darkinkyu.github.io/dark/post/a/" class="post">
+          <h2 class="post-title">
+            啊
+          </h2>
+          <div class="time">2020-11-10</div>
+        </a>
+      
+    
+      
+    
+  
+    <h2 class="year">2019</h2>
+    
+      
+    
+      
+    
+      
+    
+      
+        <a href="https://darkinkyu.github.io/dark/post/shi-shi-kan/" class="post">
+          <h2 class="post-title">
+            试试看
+          </h2>
+          <div class="time">2019-08-25</div>
+        </a>
+      
+    
+  
+</div>
+
+    
+        <div class="pagination-container">
+  
+  
+</div>
+
+    
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://darkinkyu.github.io/dark//atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
